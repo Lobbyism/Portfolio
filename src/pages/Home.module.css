@@ -1,0 +1,76 @@
+.homePage {
+  margin-top: 1rem;
+}
+.projectSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 2rem auto;
+  padding: 0 1rem;
+}
+.projectSectionInfo {
+  text-align: left;
+}
+.projectSectionImage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projectSectionImage img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-left: auto;
+}
+.projectSectionRestaurantCarousel {
+  order: 1;
+}
+.projectSectionRestaurantInfo {
+  order: 2;
+  text-align: right;
+}
+@media (max-width: 800px) {
+  .projectSectionRestaurantCarousel {
+    order: 2;
+  }
+  .projectSectionRestaurantInfo {
+    order: 1;
+    text-align: left;
+  }
+}
+.projectGameplayFeaturesSectionTitle {
+  text-align: center;
+  margin: 4rem 0 2rem 0;
+}
+.projectGameplayShowcaseSection {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.videoSection {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+.videoWrapper {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border: none;
+  margin: 0 auto;
+  aspect-ratio: 16/9;
+}
